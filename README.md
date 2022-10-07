@@ -1,5 +1,8 @@
 # RayTracing-Projects
 
+![800px-BallsRender-1](https://user-images.githubusercontent.com/3434843/194641709-6a8db346-a841-426d-8c5f-f2c3245436f1.png)
+
+
 This is a repo that holds all of my ray tracing projects, demos, and files.  Check out the live demos below!
 
 <br>
