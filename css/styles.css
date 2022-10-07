@@ -21,3 +21,10 @@ body
 	font-size: x-large;
 	font-family: Arial, Helvetica, sans-serif;
 }
+
+#myButton
+{
+	position: fixed;
+	bottom: 10%;
+	font-size: x-large;
+}
