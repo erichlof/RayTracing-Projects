@@ -2,8 +2,21 @@
 
 ![800px-BallsRender-1](https://user-images.githubusercontent.com/3434843/194641709-6a8db346-a841-426d-8c5f-f2c3245436f1.png)
 
+<br>
 
-This is a repo that holds all of my ray tracing projects, demos, and files.  Check out the live demos below!
+This GitHub repo is for demonstrating how to set up and maintain your 1st repo on GitHub.  Beginning with creating a GitHub account, installing Git on our local development machines, and using the awesome VSCode-GitHub integration feature, everything that you see here (folder structure, images, Readme, Live Demos hosted on GitHub Pages, etc.) was done on camera in this [YouTube episode](https://youtu.be/IdF_hbKsi3c?list=PL3NuKUKozjGTJRKB4duG2dxpyUu_Pj7jV)
+
+<br>
+
+That episode is part of my YouTube video series called <strong>The <em>Joy</em> Of Ray Tracing </strong> in which we start from scratch and make several types of Ray Tracers: <br>
+
+[The Joy of Ray Tracing Video Series](https://www.youtube.com/playlist?list=PL3NuKUKozjGTJRKB4duG2dxpyUu_Pj7jV)
+
+<br>
+
+The companion GitHub repository for this entire YouTube series is located at: <br>
+
+[The Joy of Ray Tracing companion code repo](https://github.com/erichlof/Joy-of-Ray-Tracing)
 
 <br>
 
