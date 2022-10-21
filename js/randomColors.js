@@ -52,26 +52,50 @@ let rectH = 20;
 let halfRectW = rectW / 2;
 let halfRectH = rectH / 2;
 
+let colorString = "rgb(255,0,0)";
+let r = 0;
+let g = 0;
+let b = 0;
+
+function randomizeColorString()
+{
+	// create a new string with the form "rgb(255,255,255)"
+	r = Math.random() * 256;
+	r = Math.floor(r);
+
+	g = Math.random() * 256;
+	g = Math.floor(g);
+
+	b = Math.random() * 256;
+	b = Math.floor(b);
+
+	colorString = "rgb(" + r + "," + g + "," + b + ")";
+}
+
+
 function draw()
 {
 	context.clearRect(0, 0, canvas.width, canvas.height);
 
-	context.fillStyle = "magenta";
+	randomizeColorString();
+	context.fillStyle = colorString;
 	context.fillRect(halfCanvasW - halfRectW, halfCanvasH - halfRectH, rectW, rectH);
 
-	context.fillStyle = "red";
+	randomizeColorString();
+	context.fillStyle = colorString;
 	context.fillRect(0, 0, rectW, rectH);
 
-	context.fillStyle = "white";
+	randomizeColorString();
+	context.fillStyle = colorString;
 	context.fillRect(canvas.width - rectW, 0, rectW, rectH);
 
-	context.fillStyle = "blue";
+	randomizeColorString();
+	context.fillStyle = colorString;
 	context.fillRect(0, canvas.height - rectH, rectW, rectH);
 
-	context.fillStyle = "green";
+	randomizeColorString();
+	context.fillStyle = colorString;
 	context.fillRect(canvas.width - rectW, canvas.height - rectH, rectW, rectH);
 }
 
 draw();
-
-console.log("RectW: " + rectW + " RectH: " + rectH);
