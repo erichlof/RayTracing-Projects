@@ -27,3 +27,4 @@ The companion GitHub repository for this entire YouTube series is located at: <b
 * [Interactive Page](https://erichlof.github.io/RayTracing-Projects/interactivePage.html) Uses addEventListeners to make page interactive
 * [Simple Button Input](https://erichlof.github.io/RayTracing-Projects/simpleButton.html) Adds a simple button to randomize width and height of rectangles
 * [Randomized Colors](https://erichlof.github.io/RayTracing-Projects/randomColors.html) Creates a unique random color (rgb) for each rectangle
+* [Pixel Loop](https://erichlof.github.io/RayTracing-Projects/pixelLoop.html) Loops over each and every pixel on the screen and sets that pixel to a unique rgb color
