@@ -28,3 +28,4 @@ The companion GitHub repository for this entire YouTube series is located at: <b
 * [Simple Button Input](https://erichlof.github.io/RayTracing-Projects/simpleButton.html) Adds a simple button to randomize width and height of rectangles
 * [Randomized Colors](https://erichlof.github.io/RayTracing-Projects/randomColors.html) Creates a unique random color (rgb) for each rectangle
 * [Pixel Loop](https://erichlof.github.io/RayTracing-Projects/pixelLoop.html) Loops over each and every pixel on the screen and sets that pixel to a unique rgb color
+* [Ray Direction Visualizer](https://erichlof.github.io/RayTracing-Projects/rayDirections.html) Using our new Vector3 library, assigns a unique ray direction vector to each pixel. The rgb colors represent the ray direction vector components(red=x, green=y, blue=z) of each pixel
