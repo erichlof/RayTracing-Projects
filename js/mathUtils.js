@@ -76,3 +76,42 @@ Vector3.prototype.normalize = function()
 	this.z *= inverseLength;
 	return this;
 };
+
+Vector3.prototype.dot = function(otherVector)
+{
+	return (this.x * otherVector.x) + (this.y * otherVector.y) + (this.z * otherVector.z);
+};
+
+Vector3.prototype.mix = function(vectorA, vectorB, t)
+{
+	t = Math.min(t, 1);
+	t = Math.max(t, 0);
+	this.x = vectorA.x + (vectorB.x - vectorA.x) * t;
+	this.y = vectorA.y + (vectorB.y - vectorA.y) * t;
+	this.z = vectorA.z + (vectorB.z - vectorA.z) * t;
+	return this;
+};
+
+
+let planeO_rayO_vec = new Vector3();
+let rayD_dot_planeN = 0;
+let result = 0;
+
+function intersectPlane(planeOrigin, planeNormal, rayOrigin, rayDirection)
+{
+	rayD_dot_planeN = rayDirection.dot(planeNormal);
+	if (rayD_dot_planeN >= 0)
+	{
+		return Infinity;
+	}
+
+	planeO_rayO_vec.copy(planeOrigin);
+	planeO_rayO_vec.subtract(rayOrigin);
+	result = planeO_rayO_vec.dot(planeNormal) / rayD_dot_planeN;
+	if (result > 0)
+	{
+		return result;
+	}
+	
+	return Infinity;
+}
