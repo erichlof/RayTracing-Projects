@@ -115,3 +115,47 @@ function intersectPlane(planeOrigin, planeNormal, rayOrigin, rayDirection)
 	
 	return Infinity;
 }
+
+let t0 = 0;
+let t1 = 0;
+let discriminant = 0;
+let oneOver_2a = 0;
+
+function solveQuadratic(a, b, c)
+{
+	discriminant = (b * b) - (4 * a * c);
+	if (discriminant < 0)
+	{
+		return false;
+	}
+	discriminant = Math.sqrt(discriminant);
+	oneOver_2a = 1 / (2 * a);
+	t0 = (-b - discriminant) * oneOver_2a;
+	t1 = (-b + discriminant) * oneOver_2a;
+	return true;
+}
+
+let L = new Vector3();
+let a, b, c = 0;
+
+function intersectSphere(spherePosition, sphereRadius, rayOrigin, rayDirection)
+{
+	L.copy(rayOrigin);
+	L.subtract(spherePosition);
+	a = rayDirection.dot(rayDirection);
+	b = 2 * L.dot(rayDirection);
+	c = L.dot(L) - (sphereRadius * sphereRadius);
+	if (solveQuadratic(a, b, c) == false)
+	{
+		return Infinity;
+	}
+	if (t0 > 0)
+	{
+		return t0;
+	}
+	else if (t1 > 0)
+	{
+		return t1;
+	}
+	return Infinity;	
+}
