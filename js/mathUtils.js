@@ -136,7 +136,11 @@ function solveQuadratic(a, b, c)
 }
 
 let L = new Vector3();
-let a, b, c = 0;
+// note: in the video for a, b, and c below, I put them all on one line, such as
+// let a, b, c = 0;  However, this does not initialize all three to 0 as I had thought.
+let a = 0;
+let b = 0;
+let c = 0;
 
 function intersectSphere(spherePosition, sphereRadius, rayOrigin, rayDirection)
 {
