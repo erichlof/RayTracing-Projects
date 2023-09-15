@@ -21,9 +21,7 @@ function handleWindowResize()
 
 let canvasX = 0;
 let canvasY = 0;
-let r = 0;
-let g = 0;
-let b = 0;
+
 let rayDirection = new Vector3();
 let colorVector = new Vector3(); // x = r, y = g, z = b
 
