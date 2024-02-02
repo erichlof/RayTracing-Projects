@@ -46,6 +46,14 @@ Vector3.prototype.multiplyScalar = function(scalarNumber)
 	return this;
 };
 
+Vector3.prototype.multiplyColor = function(otherColorVector)
+{
+	this.x *= otherColorVector.x;
+	this.y *= otherColorVector.y;
+	this.z *= otherColorVector.z;
+	return this;
+};
+
 Vector3.prototype.floor = function()
 {
 	this.x = Math.floor(this.x);
@@ -89,6 +97,14 @@ Vector3.prototype.mix = function(vectorA, vectorB, t)
 	this.x = vectorA.x + (vectorB.x - vectorA.x) * t;
 	this.y = vectorA.y + (vectorB.y - vectorA.y) * t;
 	this.z = vectorA.z + (vectorB.z - vectorA.z) * t;
+	return this;
+};
+
+Vector3.prototype.getPointAlongRay = function(rayOrigin, rayDirection, t)
+{
+	this.x = rayOrigin.x + (t * rayDirection.x);
+	this.y = rayOrigin.y + (t * rayDirection.y);
+	this.z = rayOrigin.z + (t * rayDirection.z);
 	return this;
 };
 
